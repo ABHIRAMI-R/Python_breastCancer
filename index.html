@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Breast Cancer Prediction</title>
+</head>
+<body>
+
+<h2>Breast Cancer Prediction</h2>
+
+<form action="/predict" method="POST">
+
+    {% for name in feature_names %}
+        <label>{{ name.replace("_", " ") }}</label><br>
+        <input type="text" name="{{ name }}" required><br><br>
+    {% endfor %}
+
+    <button type="submit">Predict</button>
+
+</form>
+
+</body>
+</html>
