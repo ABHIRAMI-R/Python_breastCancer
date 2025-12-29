@@ -1,0 +1,1 @@
+A ML model for predicting breast cancer developed using python. The dataset is from sklearn and the classifier used is Random Forest which gives better accuracy. The model can be trained by running the model.py file which generates the file model.pkl, then deployed by running the main file app.py file.
